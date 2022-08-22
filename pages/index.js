@@ -4,9 +4,9 @@ import MeetupList from "../component/meetups/MeetupList";
 import { MongoClient } from "mongodb";
 
 export default function Home(props) {
-  const [loadedMeetups, setLoadedMeetups] = [];
-
-  useEffect(() => {}, []);
+  useEffect(() => {
+    window.location.reload();
+  }, []);
 
   return <MeetupList meetups={props.meetups} />;
 }
