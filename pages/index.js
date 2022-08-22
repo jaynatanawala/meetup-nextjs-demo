@@ -5,7 +5,8 @@ import { MongoClient } from "mongodb";
 
 export default function Home(props) {
   useEffect(() => {
-    window.location.reload();
+    // window.location.reload();
+    console.log("props ", props);
   }, []);
 
   return <MeetupList meetups={props.meetups} />;
