@@ -30,7 +30,7 @@ function NewMeetupForm(props) {
 
     console.log("response data ", data);
     // alert(data.message);
-    router.replace("/");
+    router.push("/");
   };
 
   return (
