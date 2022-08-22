@@ -1,3 +1,14 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "meetup-nextjs-demo-seven.vercel.app"
+        }
+      ]
+    }
+  ]
 }
