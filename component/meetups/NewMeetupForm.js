@@ -29,7 +29,7 @@ function NewMeetupForm(props) {
     const data = await response.json();
 
     console.log("response data ", data);
-    alert(data.message);
+    // alert(data.message);
     router.push("/");
   };
 
