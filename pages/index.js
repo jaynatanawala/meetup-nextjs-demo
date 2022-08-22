@@ -13,6 +13,7 @@ export default function Home(props) {
 }
 
 export async function getStaticProps() {
+  console.log("-=-=-=-static props fn called-=-=-=-");
   const client = await MongoClient.connect(
     `mongodb+srv://admin:zHJFbopYrhj2akm6@cluster0.amv9pc3.mongodb.net/meetups?retryWrites=true&w=majority`
   );
